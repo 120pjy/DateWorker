@@ -23,7 +23,7 @@ internal class Program
             {
                 throw new Exception();
             }
-            initialDate.AddDays(1);
+            initialDate = initialDate.AddDays(1);
         }
 
         initialDate = new DateTime(2001, 5, 12);
@@ -35,7 +35,7 @@ internal class Program
             {
                 throw new Exception();
             }
-            initialDate.AddDays(1);
+            initialDate = initialDate.AddDays(1);
         }
     }
 }
