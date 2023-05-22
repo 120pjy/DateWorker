@@ -19,6 +19,7 @@ internal class Program
         for (int i = 0; i < 10; i++)
         {
             DateTime nextDate = GetNextDate(initialDate, frequencyDays, limitDate);
+            Console.WriteLine($"last {nextDate.DayOfWeek} before {limitDate} is {nextDate}");
             if (initialDate.DayOfWeek != nextDate.DayOfWeek)
             {
                 throw new Exception();
@@ -31,6 +32,7 @@ internal class Program
         for (int i = 0; i < 10; i++)
         {
             DateTime nextDate = GetNextDate(initialDate, frequencyDays, limitDate);
+            Console.WriteLine($"last {nextDate.DayOfWeek} before {limitDate} is {nextDate}");
             if (initialDate.DayOfWeek != nextDate.DayOfWeek)
             {
                 throw new Exception();
